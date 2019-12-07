@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .header__title {
+  font-size: 24px;
+  font-weight: 700; /* @import url에서 폰트 웨잇으로 400, 700을 받았기 때문에
+  다른 폰트 웨잇을 주고 싶다면 해당 url에  표시해야 함 */
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.header .header__icon {
+  font-size: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.header .header__header-column {
+  display: flex;
+  align-items: space-between;
+}
+
+.header .header__back-btn {
+  font-size: 22px;
+  margin-right: 20px;
+}

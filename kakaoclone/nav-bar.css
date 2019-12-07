@@ -1,0 +1,53 @@
+.nav {
+  background-color: #fcfcfc;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  padding: 20px 50px;
+  border-top: 1px solid #fcfcfc;
+  /* box-sizing: border-box; 이걸 안 하면 space-around 비율이 안 맞음 
+  style.css에 적용*/
+}
+
+.nav .nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav i {
+  font-size: 20px;
+}
+.nav .nav__list-link {
+  position: relative;
+}
+
+.nav .nav__badge {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  color: white;
+  font-size: 15px;
+  background-color: #dc5d46;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+@keyframes showNavBar {
+  from {
+    transform: translateY(80px);
+  }
+
+  to {
+    transform: none;
+  }
+}
+.nav {
+  transform: translateY(80px);
+  animation: showNavBar 0.5s ease-in-out forwards;
+  animation-delay: 0.3s;
+}

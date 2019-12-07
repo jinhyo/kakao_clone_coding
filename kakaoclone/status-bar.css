@@ -1,0 +1,16 @@
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  opacity: 0.7;
+  /* color: #656565;  opacity를 주지 않고 색을 바꿀 경우 사용*/
+}
+
+.status-bar i {
+  font-size: 16px;
+}
+
+/* .status-bar__battery-level {로 해도 적용됨 */
+.status-bar .status-bar__battery-level {
+  margin-left: 5px;
+}
